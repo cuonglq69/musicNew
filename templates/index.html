@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Music Generation</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+    <h1>Music Creation - Your music world begins here</h1>
+    <div class="container">
+        <button id="generateButton">Create</button>
+    </div>
+    <p id="generateNotice" style="display: none;">Generating Music...</p>
+    <p id="generatedNotice" style="display: none;">Your music is available</p>
+    <div class="container">
+        <audio id="musicPlayer" controls></audio>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
